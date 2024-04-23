@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Padronização da linguagem-->
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 40px;
+      }
+      section div > h2 {
+        font-size: 25px;
+        background-color: #afaa55;
+        line-height: 1.5;
+      }
+      section div > ul {
+        padding-bottom: 2%;
+      }
+      section div ul li > p {
+        font-size: 18px;
+        font-weight: 500;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+    </style>
+    <title>Semantica do HTML</title>
+  </head>
+  <body>
+    <section>
+      <h1>Falando sobre Semantica no HTML</h1>
+      <div>
+        <h2>Tag Section</h2>
+        <ul>
+          <li>
+            <p>Essas tags definem uma seção no documento</p>
+          </li>
+          <li>
+            <p>Geralmente , serve para agrupar por categorias</p>
+          </li>
+          <li>
+            <p>
+              Provavelmente um elemento que será
+              <i>utilizado muitas vezes em um projeto</i>
+            </p>
+          </li>
+          <li>
+            <p>Normalmente agrupa tags não semânticas</p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Tag Article</h2>
+        <ul>
+          <li>
+            <p>Utilizada para elementos informativos</p>
+          </li>
+          <li>
+            <p>
+              Podemos aplicar em posts de blog , comentários , cards de produtos
+            </p>
+          </li>
+          <li>
+            <p>
+              O conteúdo é individual , não fazendo relação com outros elementos
+              ou outras tags article
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Tag Header</h2>
+        <ul>
+          <li>
+            <p>
+              Utillizada para um conteúdo introdutório ou links de navegação (
+              navbar )
+            </p>
+          </li>
+          <li>
+            <p>
+              Geralmente tem elementos como : Headings , logo , informações do
+              autor ou página
+            </p>
+          </li>
+          <li>
+            <p>Podemos ter mais de um header por página</p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Tag Footer</h2>
+        <ul>
+          <li>
+            <p>Utilizada como rodapé da página</p>
+          </li>
+          <li>
+            <p>Também pode ser usada em outras tags</p>
+          </li>
+          <li>
+            <p>
+              Geralmente contém : Informações sobre a empresa , copyright ,
+              contatos , sitemap
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Tag Nav</h2>
+        <ul>
+          <li>
+            <p>Utilizada para demarcar blocos de navegação</p>
+          </li>
+          <li>
+            <p>É esperado que haja links dentro desta tag</p>
+          </li>
+          <li>
+            <p>Nem todo link precisa estar em uma div</p>
+          </li>
+          <li>
+            <p>Exemplo : Barra de navegação</p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Tag Aside</h2>
+        <ul>
+          <li>
+            <p>Utilizada para criar conteúdo na parte lateral da página</p>
+            <p></p>
+          </li>
+
+          <li>
+            <p>
+              O conteúdo do aside deve estar indiretamente relacionado ao
+              conteúdo principal
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Tags Figure e Figcaption</h2>
+        <ul>
+          <li>
+            <p>São usadas em conjunto</p>
+          </li>
+          <li>
+            <p>
+              Figure = É o elemento pai , sua função é exibir alguma imagem na
+              página
+            </p>
+          </li>
+          <li>
+            <p>A imagem é inserida pela tag img</p>
+          </li>
+          <li>
+            <p>Figcaption = É a legenda para a imagem da figure</p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Tag Main</h2>
+        <ul>
+          <li>
+            <p>Contém o conteúdo principal da página</p>
+          </li>
+          <li>
+            <p>Não podemos usar mais de uma tag main por página</p>
+          </li>
+          <li>
+            <p>
+              O conteúdo da main deve ser único , e não repetido ao longo da
+              página
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
