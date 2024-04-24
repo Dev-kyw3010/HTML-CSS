@@ -3,13 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      div {
+        margin: 2%;
+      }
+      div > label,
+      input {
+        display: block;
+      }
+    </style>
     <title>Criando Formulários no HTML</title>
   </head>
   <body>
-    <main>
-      <form action="">
-        <fieldset></fieldset>
+    <section>
+      <form action="" method="get" width="500">
+        <fieldset>
+          <legend align="center">Criando um Formulário</legend>
+          <div>
+            <label for="mail">Email:</label>
+            <input type="text" name="mail" />
+          </div>
+          <div>
+            <label for="new-pass">Criar uma senha:</label>
+            <input type="password" name="new-pass" />
+          </div>
+          <div>
+            <label for="check-pass">Confirme a senha:</label>
+            <input type="password" name="check-pass" />
+          </div>
+          <div>
+            <button type="button">Cadastrar</button>
+          </div>
+        </fieldset>
       </form>
-    </main>
+    </section>
   </body>
 </html>
