@@ -16,9 +16,12 @@
   </head>
   <body>
     <section>
+      <!--Form-->
       <form action="" method="get" width="500">
+        <!--fieldset + legend -->
         <fieldset>
           <legend align="center">Criando um Formulário</legend>
+          <!--inputs e labels-->
           <div>
             <label for="mail">Email:</label>
             <input type="text" name="mail" />
@@ -31,6 +34,35 @@
             <label for="check-pass">Confirme a senha:</label>
             <input type="password" name="check-pass" />
           </div>
+          <!--Select & options-->
+          <div>
+            <label for="gender">Qual gênero se identifica ?</label>
+            <!--Tag select que aceita mais de uma opição-->
+            <select name="gender" multiple>
+              <!--tag option que foi pre-selecionada-->
+              <option value="masculino" selected>Homem</option>
+              <option value="feminino">Feminino</option>
+              <option value="trans">Transgenero</option>
+            </select>
+          </div>
+          <div>
+            <label for="comentario">Fale o que achou do nosso produto :</label>
+            <textarea
+              name="comentario"
+              id="Coments"
+              cols="5"
+              rows="3"
+            ></textarea>
+          </div>
+          <div>
+            <label for="flavor">Sabores :</label>
+            <input type="text" name="flavor" list="flavor" />
+            <datalist id="flavor">
+              <option value="creme"></option>
+              <option value="morango"></option>
+              <option value="chocolate"></option>
+            </datalist>
+          </div>
           <div>
             <button type="button">Cadastrar</button>
           </div>
@@ -39,3 +71,10 @@
     </section>
   </body>
 </html>
+
+<!--
+  DataList = é como a tag select , porém com um autocomplete
+    * podemos pesquisar por possíveis valores para preencher o input;
+    * Ou selecionar alguma opção por meio de uma lista ;
+    * As opções são linkadas por um atributo chamado list ;
+-->
